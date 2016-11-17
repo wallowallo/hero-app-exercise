@@ -26,8 +26,12 @@ const HEROES: Hero[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedHero: Hero;
+  onSelect(hero: Hero): void {
+    this.selectedHero = hero;
+  }
   heroes = HEROES;
-  title = 'Our Heroes!';
+  title = 'Amazing heroes!';
   hero: Hero = {
     id: 1,
     name: 'Merp-man',
