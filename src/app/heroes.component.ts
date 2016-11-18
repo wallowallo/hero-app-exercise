@@ -21,7 +21,6 @@ import { HeroService } from './hero.service';
   providers: [HeroService]
 })
 export class HeroesComponent implements OnInit {
-  title = 'Amazing Heroes!';
   heroes: Hero[];
   selectedHero: Hero;
 
